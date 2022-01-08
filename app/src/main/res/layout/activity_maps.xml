@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/mapbg">
+
+    <ImageView
+        android:id="@+id/map_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/map_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/map_cmrit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CMR Institute of Technology"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_below="@+id/map_title"/>
+    <TextView
+        android:id="@+id/map_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/map_cmrit"
+        android:padding="2dp"
+        android:layout_alignLeft="@+id/map_cmrit"
+        android:layout_alignRight="@id/map_cmrit"
+        android:gravity="center"
+        android:textSize="11sp"
+        android:lineSpacingExtra="2dp"
+        android:textColor="#ffffff"
+        android:text="132, AECS Layout, ITPL Main Road, Kundalahalli, Bengaluru - 560037"/>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/map_address"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp">
+
+    <ImageView
+        android:id="@+id/directions"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/directions" />
+        <!--android:layout_marginTop="425dp"-->
+        <!--android:layout_marginLeft="250dp"-->
+
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/google" />
+        <!--android:layout_marginTop="425dp"-->
+        <!--android:layout_marginLeft="288dp"-->
+
+    </LinearLayout>
+    </fragment>
+
+</RelativeLayout>

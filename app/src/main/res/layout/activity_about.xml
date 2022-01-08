@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/aboutmain"
+    android:background="@drawable/aboutbg">
+
+    <ImageView
+        android:id="@+id/about_back"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_title"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#55000000"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <!--<TextView-->
+                    <!--android:id="@+id/about_app"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Our App"-->
+                    <!--android:gravity="start"-->
+                    <!--android:textAlignment="center"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@android:color/white"/>-->
+                <TextView
+                    android:id="@+id/about_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Cultura’17 is here to entice with a plethora of enthusiasm and vibrant excitement indulging events. In its 9th edition this year, Cultura brings forth an extravagance like no other. A myriad of options to fetch one and all the opportunity to outshine the rest.The time for you to blaze into glory is here.\n\nThe time to show off your skills is here.The time to be the best you can be is here.Come. Be a part of greatness this Cultura.Be the greatness of Cultura.So come along to
+    \n\nCompete. Conquer. Celebrate."
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#55000000"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/about_appdev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App Developers"
+                    android:layout_below="@id/about_desc"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:layout_below="@id/about_appdev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:autoLink="phone"
+                    android:textColorLink="#ffd194"
+                    android:lineSpacingExtra="5dp"
+                    android:text="
+    Rajat Agarwal - 8105078104\n
+    Ron Paul Jackson - 9480404982\n
+    Varun Saini - 9740916825\n
+    Md Nihal A - 8095299733\n
+    Kushal I - 9972520705"
+                    android:textAlignment="center"
+                    android:id="@+id/yoo"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#55000000"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cord"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Co-Ordinators"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:id="@+id/cordName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="phone"
+                        android:lineSpacingExtra="5dp"
+                        android:textColorLink="#ffd194"
+                        android:text="
+    Pratith Shetty - 9880935068\n
+    Yogesh - 8951532478\n
+    Prachi Shukla - 7259183568\n
+    Manikanta - 8892669399"
+                        android:layout_below="@id/cord"
+                        android:layout_marginTop="5dp"
+                        android:textAlignment="center"
+                        android:textSize="17sp"
+                        android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#55000000"
+                android:padding="10dp"
+                android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:id="@+id/feedback"
+                            android:layout_below="@id/cordName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Feedback"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:background="@android:color/white"
+                            android:layout_below="@id/feedback"
+                            android:id="@+id/textSubject"
+                            android:hint="Subject" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:hint="Your message"
+                            android:layout_below="@+id/textSubject"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:gravity="top"
+                            android:background="@android:color/white"
+                            android:id="@+id/textMessage" />
+
+                        <Button
+                            android:text=" SEND "
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/buttonSend"
+                            android:layout_gravity="center"
+                            android:layout_below="@+id/textMessage"
+                            android:textAllCaps="false"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:background="#ffd194"
+                            android:layout_centerHorizontal="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#55000000"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:text="We Are Social"
+                        android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/facebook"
+                        android:layout_marginRight="30dp"
+                        android:id="@+id/imageView" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/instagram"
+                        android:id="@+id/imageView2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/twitter"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/imageView3" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#55000000"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/website"
+                android:text="www.culturafest.org"
+                android:textSize="20dp"
+                android:autoLink="web"
+                android:lineSpacingExtra="5dp"
+                android:textColorLink="#ffd194"
+                android:textAlignment="center"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/activity_main"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".AboutActivity">-->
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/about_viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
+
+    <!--<me.relex.circleindicator.CircleIndicator-->
+        <!--android:id="@+id/indicator"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_height="50dp"-->
+        <!--app:ci_width="7dp"-->
+        <!--app:ci_height="7dp"/>-->
+
+    <!--<com.google.android.gms.ads.AdView-->
+        <!--android:id="@+id/adViewAbout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--ads:adSize="BANNER"-->
+        <!--ads:adUnitId="@string/location_ad_unit_id">-->
+    <!--</com.google.android.gms.ads.AdView>-->
+
+<!--</RelativeLayout>-->

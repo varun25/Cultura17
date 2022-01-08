@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:layout_weight="47"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_toLeftOf="@+id/foodpic1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="end"
+                        android:layout_height="wrap_content"
+                        android:text="Time"
+                        android:textColor="#ff9c00"
+                        android:textSize="15dp"
+                        android:id="@+id/etime1"
+                        android:layout_gravity="end"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/linearLayout"
+                        android:layout_toEndOf="@+id/linearLayout"
+                        />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/im1"
+                        android:src="@drawable/time"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="Event"
+                        android:gravity="end"
+                        android:layout_gravity="end"
+                        android:textColor="#FFEEEE"
+                        android:textSize="18dp"
+                        android:id="@+id/ename1" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/im2"
+                        android:src="@drawable/eventschedule"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Venue"
+                        android:layout_gravity="end"
+                        android:textColor="#00e4ff"
+                        android:textSize="15dp"
+                        android:id="@+id/evenue1" />
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/im3"
+                        android:src="@drawable/venue"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/dia"
+                android:id="@+id/foodpic1"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="53">
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="53">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:layout_weight="47"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/dia"
+                android:id="@+id/foodpic2"
+                android:layout_gravity="center"
+                android:layout_marginTop="31dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/foodpic2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/im4"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/time"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="start"
+                        android:layout_height="wrap_content"
+                        android:text="Time"
+                        android:textColor="#ff9c00"
+                        android:textSize="15dp"
+                        android:id="@+id/etime2"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/linearLayout"
+                        android:layout_toEndOf="@+id/linearLayout"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/im5"
+                        android:src="@drawable/eventschedule"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="start"
+                        android:layout_height="wrap_content"
+                        android:text="Event"
+                        android:textColor="#FFEEEE"
+                        android:textSize="18dp"
+                        android:id="@+id/ename2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/im6"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/venue"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="start"
+                        android:layout_height="wrap_content"
+                        android:text="Venue"
+                        android:textColor="#00e4ff"
+                        android:textSize="15dp"
+                        android:id="@+id/evenue2" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

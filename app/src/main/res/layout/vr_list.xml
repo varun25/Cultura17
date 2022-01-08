@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/vr_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:visibility="visible"
+        android:id="@+id/bhoot"
+        android:background="@drawable/vr_box" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="  Get ready with your Virtual Reality box  "
+        android:layout_marginTop="60dp"
+        android:textSize="20dp"
+        android:visibility="gone"
+        android:id="@+id/getready"
+        android:background="@drawable/background_button"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <!--<FrameLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:padding="5dp"-->
+        <!--android:id="@+id/sites"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="    Sites    "-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:gravity="bottom"-->
+            <!--android:background="@drawable/background_button"-->
+            <!--android:textSize="20dp"-->
+            <!--android:padding="4dp"-->
+            <!--android:textColor="#FFF"-->
+            <!--android:layout_gravity="center_horizontal"/>-->
+    <!--</FrameLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:id="@+id/dusrabhoot"
+            android:background="@drawable/vr_box" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="40dp"
+                android:visibility="gone"
+                android:id="@+id/mainl"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:padding="5dp"
+                        android:layout_marginRight="2dp"
+                        android:weightSum="100"
+                        android:background="#77000000"
+                        android:onClick="pic1"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0px"
+                            android:layout_weight="30"
+                            android:layout_height="wrap_content"
+                            android:background="#22000000"
+                            android:text="BasketBall court"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:textSize="20dp"
+                            android:textColor="#FFF"
+                            android:layout_gravity="center"/>
+                        <ImageView
+                            android:layout_width="0px"
+                            android:layout_height="200dp"
+                            android:padding="10dp"
+                            android:layout_weight="70"
+                            android:id="@+id/pano1"
+                            android:src="@drawable/vr_bc"
+                            android:scaleType="fitXY"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_marginRight="2dp"
+                    android:weightSum="100"
+                    android:background="#77000000"
+                    android:onClick="pic3"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_weight="30"
+                        android:layout_height="wrap_content"
+                        android:background="#22000000"
+                        android:text="Dhwani Auditorium"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20dp"
+                        android:textColor="#FFF"
+                        android:layout_gravity="center"/>
+                    <ImageView
+                        android:layout_width="0px"
+                        android:layout_height="200dp"
+                        android:layout_weight="70"
+                        android:id="@+id/pano2"
+                        android:padding="10dp"
+                        android:src="@drawable/vr_dhwani"
+                        android:scaleType="fitXY"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="5dp"
+                    android:layout_marginRight="2dp"
+                    android:weightSum="100"
+                    android:background="#77000000"
+                    android:onClick="pic2"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="0px"
+                        android:layout_weight="30"
+                        android:layout_height="wrap_content"
+                        android:background="#22000000"
+                        android:text="Main ground"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20dp"
+                        android:textColor="#FFF"
+                        android:layout_gravity="center"/>
+                    <ImageView
+                        android:layout_width="0px"
+                        android:layout_height="200dp"
+                        android:layout_weight="70"
+                        android:id="@+id/pano3"
+                        android:padding="10dp"
+                        android:src="@drawable/vr_ground"
+                        android:scaleType="fitXY"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

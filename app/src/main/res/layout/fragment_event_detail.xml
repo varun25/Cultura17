@@ -1,0 +1,215 @@
+    <com.cmrit.cultura17.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        tools:context="com.cmrit.cultura17.EventDetailFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="280dp"
+                        android:scaleType="fitXY"
+                        android:id="@+id/eImage"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="#48232324"
+                        android:layout_height="280dp"/>
+
+                <ImageView
+                    android:id="@+id/event_details_back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/back"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:paddingBottom="20dp"
+                        android:textColor="#ffffff"
+                        android:text="Hipop"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:id="@+id/eName"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="15sp"
+                    android:text="
+    \nThink less and feel more of the music. Pump your heart and let your dance do the talking. Show your rivals that this is your stage, and you are the ringmaster of this arena. Set the streets ablaze with your passion. Turn the opposition into a mere speck of dust as you weave your way through the patterns of space-time to rise above everyone else. Feel the pressure inside you. Break free or die tryin’ to."
+                    android:id="@+id/eDesc"/>
+
+                <TextView
+                    android:id="@+id/eRate_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eDesc"
+                    android:layout_marginTop="10dp"
+                    android:text="Registration Fee : "
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+
+
+                <TextView
+                    android:id="@+id/eRules_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eRate"
+                    android:layout_marginTop="10dp"
+                    android:text="Rules :"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/eRules"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eRules_text"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="5dp"
+                    android:text="Team Size: 5-8 (including all performers)
+\nRound(s): 3 (Eliminations, Semi Finals and Finals)
+\nStage: Circular Stage with audience on all sides.
+\nStyle(s): Hip-Hop, Popping, Tutting, Krumping, Breakdance, Stepping, Bboying, Contraptions and Western Freestyle.
+\nDeviation from hip-hop is discouraged."
+                    />
+
+                <TextView
+                    android:id="@+id/ePrize_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eRules"
+                    android:layout_marginTop="10dp"
+                    android:text="Prize :"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/ePrize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ePrize_text"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="5dp"
+                    android:text="1st Place: 20,000 INR
+\n2nd Place: 12,000 INR
+\n3rd Place: 8,000 INR"
+                    />
+
+                <TextView
+                    android:id="@+id/eVenue_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ePrize"
+                    android:layout_marginTop="10dp"
+                    android:text="Venue :"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/eCont_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eVenue"
+                    android:layout_marginTop="10dp"
+                    android:text="Contact :"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/eCont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eCont_text"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="60dp"
+                    android:autoLink="phone"
+                    android:textColorLink="#3860f1"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="5dp"
+                    android:text="Ishaan Gupta - 7738691440
+\nPranita Nikam - 8692955410"
+                    />
+
+                <TextView
+                    android:id="@+id/eRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="5dp"
+                    android:text="Rs. 100"
+                    android:layout_marginLeft="123dp"
+                    android:layout_marginStart="123dp"
+                    android:layout_alignBaseline="@+id/eRate_text"
+                    android:layout_alignBottom="@+id/eRate_text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/eVenue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:lineSpacingExtra="5dp"
+                    android:text="Dwani"
+                    android:layout_marginLeft="54dp"
+                    android:layout_marginStart="54dp"
+                    android:layout_alignBaseline="@+id/eVenue_text"
+                    android:layout_alignBottom="@+id/eVenue_text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:id="@+id/adViewED"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FFF"
+                    >
+                </ImageView>
+
+            </RelativeLayout>
+
+            </LinearLayout>
+
+    </com.cmrit.cultura17.ObservableScrollView>

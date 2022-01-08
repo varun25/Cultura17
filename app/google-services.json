@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "217302301512",
+    "firebase_url": "https://cultura17-ae97f.firebaseio.com",
+    "project_id": "cultura17-ae97f",
+    "storage_bucket": "cultura17-ae97f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217302301512:android:be1b1714e0197a43",
+        "android_client_info": {
+          "package_name": "com.cmrit.cultura17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217302301512-9r6uqqsc9ggnp4dnfqgaarkc5nfbsloa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw6JimM47nWHrj3lvXhSEUEWrDmYrHc2I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

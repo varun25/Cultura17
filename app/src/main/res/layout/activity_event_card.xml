@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_event_card_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmrit.cultura17.EventCardActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_event_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/event_card_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/event_card_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/viewPagerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:clipChildren="false"
+            android:layout_below="@+id/event_card_title">
+
+            <carbon.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                />
+        </LinearLayout>
+
+        <!--<Button-->
+            <!--android:id="@+id/interested"-->
+            <!--android:layout_width="150dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_below="@+id/viewPagerLayout"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@drawable/background_button"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:onClick="interested"-->
+            <!--android:text="I'm Interested"-->
+            <!--android:textSize="18sp"-->
+            <!--/>-->
+
+    </RelativeLayout>
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/interested"-->
+        <!--android:id="@+id/awesomedude"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_gravity="center"/>-->
+
+</FrameLayout>

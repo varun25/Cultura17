@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/menupic"/>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="#77FFFFFF"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        ></View>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/recyclervv">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFF"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day 0"
+        android:id="@+id/day"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFF"
+        android:layout_marginTop="70dp"
+        android:textSize="30dp"/>
+
+</FrameLayout>
